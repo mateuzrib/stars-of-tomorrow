@@ -21,7 +21,56 @@
         <h1>
           Enrollment Form
         </h1>
-        <p>Fill in the information below to enroll your child in the Tomorrow Stars early childhood education school</p>
+        <p>
+          Fill in the information below to enroll your child in the Tomorrow Stars early childhood education school
+        </p>
+
+        <form method="post" enctype="multipart/form-data">
+          <fieldset class="child-info">
+            <legend>Child Information</legend>
+
+            <div class="input-wrapper">
+              <label for="fullname">Full Name</label>
+              <input id="fullname" type="text" name="fullname" placeholder="Child name">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="birth">Birth Date</label>
+              <input id="birth" type="date" name="birth" lang="en">
+            </div>
+
+            <div class="select-wrapper">
+              <label for="gender">Gender</label>
+              <select id="gender" name="gender">
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="textarea-wrapper">
+              <label for="medical-info">Medical Information</label>
+              <textarea 
+                name="medical-info" 
+                id="medical-info" 
+                cols="30" 
+                rows="10" 
+                placeholder="She is allergic to gluten"
+              ></textarea>
+            </div>
+
+            <div class="droparea-wrapper">
+              <input type="file" id="birth-file" name="birth-file">
+              <img src="assets/icons/cloud-upload.svg" alt="">
+              <p>
+                Click here to <br>
+                select your file
+              </p>
+            </div>
+
+          </fieldset>
+        </form>
+
       </div>
     </main>
 
