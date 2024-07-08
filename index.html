@@ -69,7 +69,6 @@
                   <path d="M24 26V42M24 26C22.5996 26 19.9831 29.9886 19 31M24 26C25.4004 26 28.017 29.9886 29 31" stroke="#D6D3D1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
                   
-
                 <p>
                   Click here to <br>
                   select your file
@@ -78,6 +77,40 @@
             </div>
 
           </fieldset>
+
+          <fieldset class="address">
+            <legend>Residential Address</legend>
+
+            <div class="input-wrapper">
+              <label for="zip-code">Zip Code</label>
+              <input type="text" id="zip-code" name="zip-code">
+            </div>
+
+            <div class="flex">
+              <div class="input-wrapper flex-2">
+                <label for="street">Street</label>
+                <input type="text" id="street" name="street" value="John M. Street" disabled>
+              </div>
+
+              <div class="input-wrapper flex-1">
+                <label for="number">Number</label>
+                <input type="number" id="number" name="number" disabled>
+              </div>
+            </div>
+
+            <div class="flex">
+              <div class="input-wrapper flex-2">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" value="São Paulo" disabled>
+              </div>
+
+              <div class="input-wrapper flex-1">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" value="SP" disabled>
+              </div>
+            </div>
+          </fieldset>
+
         </form>
 
       </div>
