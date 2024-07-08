@@ -49,3 +49,39 @@ aside {
     }
   }
 }
+
+@media (max-width: 800px) {
+  body {
+    overflow: auto;
+  }
+
+  #app {
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  aside {
+    padding: 2rem;
+  }
+
+  aside h2 {
+    font-size: 2rem;
+  }
+
+  .aside-container > img {
+    display: none;
+  }
+
+  main {
+    display: flex;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+  }
+
+  main .main-container {
+    align-content: center;
+    margin-left: 0;
+  }
+}
